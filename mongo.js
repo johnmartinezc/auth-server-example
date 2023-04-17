@@ -10,13 +10,14 @@ async function mongoConnect() {
 	try {
 		// Connect the client to the server
 		await client.connect();
-		database = await client.db(process.env.MONGO_DATABASE);
+		database = await client.db("test");
 		// Establish and verify connection
 		console.log("db connected");
 	} catch (error) {
 		throw Error("Could not connect to MongoDB. " + error);
 	}
 }
+// retuning 
 function db() {
 	return database;
 }
