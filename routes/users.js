@@ -60,7 +60,7 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    const userType = email.includes("codeimmersives.com") ? "admin" : "user";
+    const userType = email.includes ("BlumbergConsulting.com") || ("RekkrIndustries.com" ) ? "admin": "user";
 
     const data = {
       date: new Date(),
