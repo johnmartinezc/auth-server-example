@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 let database;
 async function mongoConnect() {
 	// Connection URI
-	const uri = process.env.ATLAS_URI;
+	const uri = process.env.MONGO_URI;
 	// Create a new MongoClient
 	const client = new MongoClient(uri);
 	try {
